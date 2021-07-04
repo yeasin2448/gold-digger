@@ -1,18 +1,27 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <app-header></app-header>
+    <app-golds></app-golds>
+    <app-footer></app-footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import Golds from './components/Golds.vue'
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
+    'app-header': Header,
+    'app-footer': Footer,
+    'app-golds': Golds
+  },
+  data() {
+    return {
+
+    }
+  },
 }
 </script>
 
