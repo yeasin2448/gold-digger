@@ -8,6 +8,7 @@ import About from './pages/About.vue'
 import Services from './pages/Services.vue'
 import Blog from './pages/Blog.vue'
 import Contact from './pages/Contact.vue'
+import Login from './pages/Login.vue'
 
 const router = new VueRouter({
 	mode: 'history',
@@ -17,6 +18,11 @@ const router = new VueRouter({
 			name: 'Home',
 			path: "/",
 			component: Home
+		},
+		{
+			name: 'Login',
+			path: "/login",
+			component: Login
 		},
 		{
 			name: 'About',

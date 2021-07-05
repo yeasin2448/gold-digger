@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import { bus } from '../main'
+// import { bus } from '../main'
 export default {
     props: {
         title: {
@@ -18,9 +18,9 @@ export default {
         }
     },
     created() {
-        bus.$on('titleOn', (data)=> {
-            this.title = data
-        })
+        // bus.$on('titleOn', (data)=> {
+        //     this.title = data
+        // })
     }
 }
 </script>

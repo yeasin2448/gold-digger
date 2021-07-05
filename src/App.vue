@@ -1,6 +1,6 @@
 <template>
 	<div class="flex flex-col min-h-screen">
-		<app-header class="flex-none" :title="title" v-on:onTitle="updateGold($event)"></app-header>
+		<app-header class="flex-none" :title="title" @titleOn="updateGold($event)"></app-header>
 		<!-- <app-header></app-header>
 		<app-golds></app-golds>
 		<app-footer></app-footer>-->
@@ -22,13 +22,20 @@ export default {
 	},
 	data() {
 		return {
-			title : 'Gold Digger'
+			title: 'Gold Digger'
 		}
 	},
 	methods: {
-		updateGold: function(updatedGolds) {
-			this.title = updatedGolds;
-		}
+		updateGold(newTitle) {
+			this.title = newTitle
+		},
+		// updateGold: () => {
+		// 	console.log('updateGold', this)
+		// },
+		// updateGold: function (data) {
+		// 	console.log('updateGold', this, data)
+		// 	// this.title = updatedGolds;
+		// }
 	}
 }
 </script>
