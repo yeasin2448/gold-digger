@@ -4,6 +4,8 @@ import './assets/tailwind.css'
 
 import router from './router'
 
+export const bus = new Vue();
+
 new Vue({
   router,
   render: h => h(App),

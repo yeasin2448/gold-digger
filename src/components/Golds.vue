@@ -1,26 +1,31 @@
 <template>
-  <div id="golds">
+  <div id="golds" class="text-center">
     <ul>
       <li v-for="gold in golds" v-bind:key="gold.name" v-on:click="gold.show = !gold.show">
         <h3>{{ gold.name }}</h3>
         <h4 v-if="gold.show">{{ gold.speciality }}</h4>
       </li>
     </ul>
+    <button v-on:click="deleteGolds" class="bg-yellow-500 rounded p-2 text-yellow-50 font-semibold mt-4">Delete Gold</button>
   </div>
 </template>
 
 <script>
   export default {
+    props : {
+      golds : {
+        type : Array,
+        required : true
+      }
+    },
     data() {
-      return {
-        golds : [ 
-          {name: 'Anik', speciality: 'Frontend Master', show: false},
-          {name: 'Istiaque', speciality: 'Frontend developer', show: false},
-          {name: 'Asif', speciality: 'Django developer', show: false},
-          {name: 'Arman Vai', speciality: 'WordPress Master', show: false},
-          {name: 'Ridwan', speciality: 'WordPress Devloper', show: false},
-          {name: 'Yeasin', speciality: 'Web designer', show: false}
-        ]
+      return {    
+        
+      }
+    },
+    methods: {
+      deleteGolds: function () {
+        this.golds.pop();
       }
     }
   }
