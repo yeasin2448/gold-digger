@@ -43,6 +43,11 @@ const router = new VueRouter({
 			name: 'Contact',
 			path: "/contact",
 			component: Contact
+		},
+		{
+			name: 'Components',
+			path: "/components",
+			component: () => import('@/pages/Components.vue')
 		}
 	]
 })

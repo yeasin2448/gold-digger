@@ -28,7 +28,8 @@ export default {
 				{ name: 'About', link: '/about' },
 				{ name: 'Services', link: '/services' },
 				{ name: 'Blog', link: '/blog' },
-				{ name: 'Contact', link: '/contact' }
+				{ name: 'Contact', link: '/contact' },
+				{ name: 'Components', link: '/components' },
 			]
 		}
 	},
