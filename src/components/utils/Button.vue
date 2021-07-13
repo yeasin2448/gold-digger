@@ -7,7 +7,7 @@
 			'rounded-full':rounded
 		}"
 		@click="onClickButton"
-		class="button flex items-center justify-center px-8 py-3"
+		class="button flex items-center justify-center px-5 py-3"
 	>
 		<slot />
 	</button>
@@ -40,6 +40,5 @@ export default {
 </script>
 
 <style lang='scss' scoped>
-	.button {
-	}
+	
 </style>
